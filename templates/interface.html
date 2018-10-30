@@ -1,0 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+function abrefecha(op) {
+	// ajax the JSON to the server
+	$.post("/porta", JSON.stringify({"status": op}), function(){
+
+	});
+	// stop link reloading the page
+ event.preventDefault();
+}
+</script>
+This will send data using AJAX to Python:<br /><br />
+<button onclick = abrefecha(1)> Abrir</button>
+</hr>
+<button onclick = abrefecha(0)> Fechar</button>
